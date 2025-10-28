@@ -63,3 +63,20 @@ input,textarea{width:100%;padding:12px;border:1px solid #d8e0ea;border-radius:10
   .toolgrid{grid-template-columns:1fr 1fr}
   .hero h1{font-size:32px}
 }
+/* --- Mobile polish --- */
+@media (max-width: 640px) {
+  /* Make header non-sticky on phones so it doesn't cover the hero */
+  .site-header { position: static; }
+
+  /* Let the top bar wrap neatly and reduce size */
+  .nav { height: auto; padding: 10px 0; flex-wrap: wrap; }
+  .brand { max-width: 60%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .logo { font-size: 18px; line-height: 1.2; }
+
+  /* Tighter nav and button */
+  nav a { margin-left: 12px; font-size: 14px; }
+  .btn--small { padding: 6px 10px; font-size: 14px; }
+
+  /* Extra breathing room for the hero */
+  .hero { padding-top: 24px; }
+}
